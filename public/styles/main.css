@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:16px;
+}
+
+body{
+    font-family: monospace;
+}
+
+#app {
+    margin: 2rem 10rem;
+}
+
+.input {
+    width: 5rem;
+    min-height: 2rem;
+    text-align: center;
+    border: 0.1rem dashed pink;
+    margin: 0.5rem;
+}
+
+.input__list {
+    min-width: 5rem;
+    min-height: 2.5rem;
+    text-align: center;
+    border: 0.1rem dashed red;
+    margin-top: 0.4rem;
+}
+/* header  */
+.header {
+    text-align: center;
+}
+.header__title {
+    font-size: 5rem;
+}
+
+.header__text {
+    font-style: italic;
+}
+
+.audio {
+    margin: 0.5rem 0;
+    height: 1.5rem;
+    border: 0.1rem dotted red;
+    border-radius: 0.5rem;
+}
+
+/* main  */
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__section {
+    margin: 1.5rem 0;
+}
+.question {
+    border: 0.1rem dotted black;
+    padding: 0.4rem;
+    width: 50%;
+    text-align: center;
+    align-self: flex-end;
+    box-shadow: 0.5rem 0.5rem 0.05rem gray;
+}
+
+.submit, .love-item__delete, .love-item__edit {
+    font-family: Arial;
+    padding: 0.15rem 0.25rem;
+    background-color: white;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+}
+
+.love-item__delete, .love-item__edit {
+    margin: 0.5rem 0;
+}
+
+.love-item__delete:hover, .love-item__edit:hover, .submit:hover {
+    background-color: black;
+    color: white;
+}
+/* list */
+.love-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.love-item {
+    margin: 0.2rem;
+    text-align: center;
+}

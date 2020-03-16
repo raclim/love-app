@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <h1 class="header__title">Love Today</h1>
+        <audio class="audio" controls src="./assets/LoveToday.mp3">
+          Youre browser does not support the <code>audio</code> element.
+        </audio>
+        <p class="header__text">Everybody's gonna love today!</p>
+      </header>
+      <main class="main">
+        <section class="main__section question">
+          <h2>WHAT and WHEN do you LOVE?</h2>
+          <form class="love-form">
+            <input class="input" type="text" name="love" cols="40" rows="2" placeholder="WHAT"/>
+            <input class="input" type="text" name="day" placeholder="WHEN"/>
+            <input class="submit" type="submit" value="Adding Love!"/>
+          </form>
+        </section>
+        <section class="main__section">
+          <h2>List of LOVE</h2>
+          <section class="love-list"></section>
+        </section>
+      </main>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
