@@ -46,9 +46,10 @@ Below is the final result.
 ![See.](public/assets/LoveTodaySee.png)
 ![Edit.](public/assets/LoveTodayEdit.png)
 
-## Deployment
+## Deployment + Presentation
 
 [Project on Heroku](https://love-today.herokuapp.com/)
+[Presentation Link](https://youtu.be/GQG_W5NManI) 
 
 ## Next Steps
 After adding some stuff and looking through it I personally felt a little soft thinking of everything I have loved! Maybe I'll continue to add to it or will look back at it as a nice reminder. OR MAYBE I will see some new mystery entries! 
