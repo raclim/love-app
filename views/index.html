@@ -10,24 +10,39 @@
   <body>
     <div id="app">
       <header class="header">
-        <h1 class="header__title">Love Today</h1>
+        <h1><a class="header__title" href="/">Love Today</a></h1>
         <audio class="audio" controls src="./assets/LoveToday.mp3">
           Youre browser does not support the <code>audio</code> element.
         </audio>
         <p class="header__text">Everybody's gonna love today!</p>
       </header>
       <main class="main">
-        <section class="main__section question">
-          <h2>WHAT and WHEN do you LOVE?</h2>
-          <form class="love-form">
-            <input class="input" type="text" name="love" cols="40" rows="2" placeholder="WHAT"/>
-            <input class="input" type="text" name="day" placeholder="WHEN"/>
-            <input class="submit" type="submit" value="Adding Love!"/>
-          </form>
+        <section class="main__section question__section">
+          <div class="question">
+            <h2>WHAT and WHEN do you LOVE?</h2>
+            <form class="love-form">
+              <input class="input" type="text" name="love" cols="40" rows="2" placeholder="WHAT"/>
+              <input class="input" type="text" name="day" placeholder="WHEN"/>
+              <input class="submit" type="submit" value="Adding Love!"/>
+            </form>
+          </div>
+          <div class="question-links">
+            <a class="see-link" href="#see">See the Love</a>
+            <a class="remix-link" href="#remix">Remix the Love</a>
+          </div>
         </section>
-        <section class="main__section">
-          <h2>List of LOVE</h2>
-          <section class="love-list"></section>
+        <section class="main__section see__section">
+          <h2 id="see">See the LOVE</h2>
+          <div class="see-list">
+            <div class="see-title">Nothing yet. Try clicking on an item below.</div>
+            <div class="see-display"></div>
+          </div>
+          <div class="choose-list"></div>
+        </section>
+        <section id="remix" class="main__section">
+          <h2>Remix the LOVE</h2>
+          <p>Please edit with thought and love.</p>
+          <div class="love-list"></div>
         </section>
       </main>
     </div>

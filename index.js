@@ -13,7 +13,8 @@ const MONGODB_URI = config.MONGODB_URI;
 
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true, 
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
 });
 
 //connect to your collection 
@@ -72,7 +73,10 @@ app.put("/api/v1/loves/:id", async(req, res) => {
 // DELETE: "api/v1/loves:id"
 app.delete("/api/v1/loves/:id", async(req, res) => {
     try {
-        const deletedDocument = await loves.findOneAndDelete(req.params.id);
+        console.log("deleting: ",req.params.id);
+        console.log("loves: ",loves);
+        const deletedDocument = await loves.findOneAndDelete({_id: req.params.id});
+        console.log("deleting: ",deletedDocument);
         res.json({"message":"removed", "data": JSON.stringify(deletedDocument)});
     } catch(error){
         res.json({error: JSON.stringify(error)});
